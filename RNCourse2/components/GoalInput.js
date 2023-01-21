@@ -19,6 +19,8 @@ const GoalInput = (props) => {
     props.onAddGoal(enteredGoalText);
     setEnteredGoalText("");
   };
+
+  console.log("CIUYS");
   return (
     <Modal
       visible={props.visible}
