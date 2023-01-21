@@ -30,8 +30,9 @@ export default function App() {
     setUserNumber(pickedNumber);
     setGameIsOver(false);
   };
-  const gameOverHandler = () => {
+  const gameOverHandler = (roundNumber) => {
     setGameIsOver(true);
+    setGuessRounds(roundNumber);
   };
 
   const startNewGameHandler = () => {
